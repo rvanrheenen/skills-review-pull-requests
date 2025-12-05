@@ -89,7 +89,7 @@
     input.addEventListener("click", handleClickInput);
   }
 
-  // The user must chose a box, check for win, robot turn, and check for win again.
+  // The user must chose a box and check for win. Then, the user must robot turn and check for win again.
   function handleClickInput(evt) {
     evt.target.closest("td").innerHTML = HUMAN;
     if (hasWin()) {
